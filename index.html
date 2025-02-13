@@ -8,20 +8,28 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function() {
-            $("#nameInput").keypress(function(event) {
-                if (event.which === 13) {
-                    event.preventDefault();
-                    $("body").fadeOut(500, function() {
-                        window.location.href = "ven.html";
-                    });
-                }
-            });
-            $("#clickButton").click(function() {
+        $("#nameInput").keypress(function(event) {
+            if (event.which === 13) {
+                event.preventDefault();
+                validateName();
+            }
+        });
+
+        $("#clickButton").click(function() {
+            validateName();
+        });
+
+        function validateName() {
+            var name = $("#nameInput").val().trim();
+            if (name === "Wanitchaya") {
                 $("body").fadeOut(500, function() {
                     window.location.href = "ven.html";
                 });
-            });
-        });
+            } else {
+                alert("กรุณากรอกชื่อให้ถูกต้อง");
+            }
+        }
+    });
     </script>
 </head>
 <body>
