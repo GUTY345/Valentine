@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สุขสันต์วันวาเลนไทน์</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#nameInput").keypress(function(event) {
+                if (event.which === 13) {
+                    event.preventDefault();
+                    $("body").fadeOut(500, function() {
+                        window.location.href = "ven.html";
+                    });
+                }
+            });
+            $("#clickButton").click(function() {
+                $("body").fadeOut(500, function() {
+                    window.location.href = "ven.html";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>กรอกชื่อ</h1>
+        <input type="text" id="nameInput" placeholder="Wanitchaya">
+        <button id="clickButton">กด</button>
+    </div>
+</body>
+</html>

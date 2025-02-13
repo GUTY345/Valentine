@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff77a9, #ff7f50);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.player-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.player-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.player-header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.album-cover img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.album-cover img:hover {
+    transition: 0.4s;
+    scale: 1.08;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.play-btn {
+    background-color: #ff66b2;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-btn:hover {
+    background-color: #ff3385;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffb3d9;
+}
+
+.footer a:hover {
+    transition: 0.4s;
+    color: rgb(255, 0, 191);
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+}
